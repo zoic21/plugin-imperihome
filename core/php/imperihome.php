@@ -15,17 +15,19 @@
  * You should have received a copy of the GNU General Public License
  * along with Jeedom. If not, see <http://www.gnu.org/licenses/>.
  */
-if (!isset($_GET['_url'])) {
-	die();
-}
 header('Content-type: application/json');
 ob_start();
 require_once dirname(__FILE__) . "/../../../../core/php/core.inc.php";
+if (!isset($_GET['_url'])) {
+	echo __('Vous n\'etes pas autorisé à effectuer cette action', __FILE__);
+	die();
+}
+
 $args = explode("/", $_GET['_url']);
 
 if (!jeedom::apiAccess($args[1], 'imperihome')) {
 	user::failedLogin();
-	echo 'Clef API non valide, vous n\'etes pas autorisé à effectuer cette action (jeeApi)';
+	echo __('Vous n\'etes pas autorisé à effectuer cette action', __FILE__);
 	die();
 }
 
