@@ -15,6 +15,9 @@
  * You should have received a copy of the GNU General Public License
  * along with Jeedom. If not, see <http://www.gnu.org/licenses/>.
  */
+if (!isset($_GET['_url'])) {
+	die();
+}
 header('Content-type: application/json');
 ob_start();
 require_once dirname(__FILE__) . "/../../../../core/php/core.inc.php";
