@@ -1,0 +1,9 @@
+{
+	"id" : "imperihome",
+	"name" : "ImperiHome",
+	"description" : "Plugin permettant la communication avec le logiciel ImperiHome (API ISS)",
+	"licence" : "AGPL",
+	"author" : "Loïc",
+	"require" : "2.4",
+	"category" : "communication"
+}
