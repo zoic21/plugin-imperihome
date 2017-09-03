@@ -1,0 +1,9 @@
+= Mpower
+
+== Description
+
+Ce plugin permet de relier Jeedom à imperihome
+
+'''
+
+include::changelog.asciidoc[]

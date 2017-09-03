@@ -4,6 +4,8 @@
 	"description" : "Plugin permettant la communication avec le logiciel ImperiHome (API ISS)",
 	"licence" : "AGPL",
 	"author" : "Loïc",
-	"require" : "2.4",
-	"category" : "communication"
+	"require" : "3.0",
+	"category" : "communication",
+	"changelog" : "https://github.com/zoic21/plugin-imperihome/blob/master/doc/#language#/changelog.asciidoc",
+	"documentation" : "https://github.com/zoic21/plugin-imperihome/blob/master/doc/#language#/index.asciidoc"
 }
